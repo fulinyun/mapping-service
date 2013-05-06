@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>cmspv mapping service</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+<script>
+//$(function() {
+//	$('#upload').click(function(e) {
+//		$.ajax({
+//			url: 'Read',
+//			type: 'POST',
+//			contentType: attr('enctype', 'multipart/form-data'),
+//			}, {enctype: }, function(data) {
+//			$('#data').html(data);
+//		});
+//	});
+//	$('#map').click(function(e) {
+//	});
+//});
+</script>
+<style>
+#map {
+margin-left: 10px;
+}
+</style>
+</head>
+<body>
+<form method='post' action='Map' enctype='multipart/form-data'>
+Select skos file to upload: <input type='file' name='file' size='60' /><br /><br />
+tag: <input type='text' name='tag' size='30' /><br /><br />
+<input type='submit' value='Upload' id='upload'/><input type='button' value='Map' id='map'/>
+</form>
+<div id='data'></div>
+</body>
+</html>
